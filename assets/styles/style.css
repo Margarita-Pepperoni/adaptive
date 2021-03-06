@@ -1,0 +1,80 @@
+/* <link rel="stylesheet" href="assets/styles/style.css">
+
+селектор по классу (2)*/
+.menu {
+    text-decoration: none;
+    color: white;
+    display: inline;
+    padding: 20px;
+    margin: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 150%;
+
+}
+
+nav .menu {
+    font-size: 20px;
+}
+
+/*псевдокласс (1)*/
+a:hover {
+    text-decoration: underline;
+}
+
+/*псевдокласс (2)*/
+a:visited {
+    color: darkslateblue
+}
+
+/*селектор по тегу (3)*/
+h1 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 150%;
+}
+
+button {
+    color: white;
+    background: #99862A;
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+button:hover {
+    background: green;
+}
+
+/*псевдокласс (3)*/
+input:invalid {
+    background: #f0744e;
+}
+
+input:valid {
+    background: white;
+}
+
+body {
+    background: #282828;
+}
+
+h1 {
+    animation-duration: 10s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}

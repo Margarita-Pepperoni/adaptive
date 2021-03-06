@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<link rel="stylesheet" href="assets/styles/normalize.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вино</title>
+    <link rel="short icon" href="assets/wine-icon.svg" type="image/svg">
+</head>
+<style>
+    .container_contacts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 20px;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        padding: 30px 0px;
+        /*border: 1px dashed orange;*/
+        margin: 0px 60px;
+    }
+
+    .address {
+        display: grid;
+        grid-column: 1;
+    }
+    .phone {
+        display: grid;
+        grid-column: 2;
+        text-align: right;
+    }
+
+    .container_nav {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        font-family: 'Montserrat', sans-serif;
+        height: 20px;
+        color: white;
+        /*border: 1px dashed turquoise;*/
+        padding: 30px;
+        margin: 0px 60px;
+}
+
+    .menu {
+        text-align: center;
+    }
+
+    .container_buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 5fr 1fr;
+        font-family: 'Montserrat', sans-serif;
+        /*border: 1px dashed pink;*/
+        padding: 100px;
+        margin: 0px 60px;
+    }
+
+    .wine-card {
+        display: grid;
+        justify-self: end;
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .degustation {
+        display: grid;
+        justify-self: start;
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    button {
+    color: white;
+    background: #99862A;
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+</style>
+<body>
+    <header>
+        <div style="background-image: url(assets/bgc.jpg); height: 900px;">
+            <div class="container_contacts">
+            <div class="address">Новокузнечный переулок 4/1</div>
+            <div class="phone">8 (812) 123-45-67</div>
+            </div>
+            <nav class="container_nav">
+                <a class="menu" href="kat.html">Каталог</a>
+                <a class="menu" href="del.html">Доставка</a>
+                <a class="menu" href="col.html">Коллекции</a>
+                <a class="menu" href="cont.html">Контакты</a>
+            </nav>
+            <div class="container_buttons">
+            <button class="wine-card">винная карта</button>
+            <button class="degustation">дегустация</button>
+            </div>
+            <h1>Лучший вкус, это вкус долголетнего вина</h1>
+        </div>
+    </header>
+        <div>
+            <p><input type="email" required></p>
+            <p><input type="submit" value="отправьте свой e-mail"/></p>
+        </div>
+
+</body>
+</html>
